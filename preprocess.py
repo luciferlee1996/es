@@ -32,12 +32,15 @@ left = []
 total = len(term_set)
 cnt = 0
 
+term_set = list(term_set)
+term_set.sort()
+
 #for term in term_list:
 #    SET.add(term)
 
 for term in term_set:
-    wfile.write(term + " ")
-
+    wfile.write(term + "\n")
+    print(term)
 file.close()
 wfile.close()
 print("file " + file_name + " closed")
