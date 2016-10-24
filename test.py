@@ -7,11 +7,9 @@ print("file " + file_name + " opened")
 term_list = file.read().replace('\n', ' ').replace(',', ' ').replace.replace('?', ' ').replace(';', ' ').split()
 '''
 
-term_list = file.read()
+term_list = file.read().split()
 
-for c in ['\n', ',', '.', '?', '!', ';', '\'s']:
-    if c in term_list:
-        term_list = term_list.replace(c, ' ')
+
 
 str_german = 'German'
 str_latin = 'Latin'
