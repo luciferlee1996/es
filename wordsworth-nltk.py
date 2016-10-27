@@ -93,11 +93,11 @@ def print_n_word_frequencies(n_word_counter, top_n, output_file, tag=None):
 			
 	
 def print_word_type_freq(noun_counter, adjective_counter, adverb_counter, verb_counter, output_file):
-	total_entries = sum(noun_counter.values()) + sum(adjective_counter.values()) + sum(adverb_counter.values()) + sum(verb_counter.values())
-	noun_entries = sum(noun_counter.values())
-	adj_entries = sum(adjective_counter.values())
-	adv_entries = sum(noun_counter.values())
-	verb_entries = sum(verb_counter.values())
+    total_entries = sum(noun_counter.values()) + sum(adjective_counter.values()) + sum(adverb_counter.values()) + sum(verb_counter.values())
+    noun_entries = sum(noun_counter.values())
+    adj_entries = sum(adjective_counter.values())
+    adv_entries = sum(noun_counter.values())
+    verb_entries = sum(verb_counter.values())
     print '\n=== ' + 'Word Type Frequency Analysis' + ' ==='
     out.write '\n=== ' + 'Word Type Frequency Analysis' + ' ==='
     print '\nNoun: ' + noun_entries / total * 100 + '%'
